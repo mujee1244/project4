@@ -1,171 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
 <body>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="js/app.js"></script>
 
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
-        </div>
-      </div>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="https://get.foundation/sites/docs/">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="https://github.com/foundation/foundation-sites/discussions">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-sites">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/FoundationCSS">@FoundationCSS</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <nav class="top-bar" id="main-nav">
+    <div class="top-bar-left">
+      <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="map.html">Location</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <button id="darkModeToggle" class="button">Toggle Dark Mode</button>
+      <button id="scrollToTop" class="button alert">Scroll to Top</button>
+    </div>
+  </nav>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+        <h1>Welcome to My Personal Website</h1>
 
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
+        <p>Hello! I'm Mujeebur Rahman, an IT professional with over 20 years of experience in network design,
+          implementation,
+          and troubleshooting. This website is a place where you can learn more about my professional background,
+          personal
+          interests, and hobbies.</p>
 
-          <hr />
 
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
-        </div>
+        <h2>About Me</h2>
+        <p>I am a technologically astute IT professional with a passion for computer technology and innovation. Over
+          the
+          years, I have successfully led IT support teams, implemented critical networking solutions, and managed
+          enterprise-level systems. My expertise spans multi-platform networking, operating systems, migrations,
+          upgrades,
+          monitoring, and security.</p>
+        <p>I’m someone who values meaningful connections, creativity, and lifelong learning. Whether it’s spending
+          time with
+          family, exploring new ideas, or working on passion projects, I always strive to make the most of every
+          moment. I
+          believe in the power of small joys, deep conversations, and the pursuit of personal growth.</p>
 
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-            <a href="#" class="success button">Success Btn</a><br/>
-            <a href="#" class="alert button">Alert Btn</a><br/>
-            <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="https://get.foundation/sites/docs/" class="small button">Go to Foundation Docs</a>
-          </div>
-        </div>
+        <h2>Explore My Website</h2>
+        <p>On this website, you can find:</p>
+        <ul>
+          <li><strong>My Resume</strong>: Learn about my professional experience, skills, and certifications.</li>
+          <li><strong>My Hobbies</strong>: Discover how I spend my free time and what brings me joy outside of work.
+            Time
+            outside of work is really important for one's mental health. It is an alien concept for many. But this is
+            exactly what makes one fit for society.</li>
+        </ul>
+
+
+
+
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or phone:</p>
+        <p>Email: Mujeeb6975@gmail.com</p>
+        <p>Phone: Home 416-282-6512 | Cell: 416 875 1244</p>
+        <p>Location: 934 Queens Ave., Victoria, BC Canada V8T 1M6</p>
+
+
+
+
+
+
+        <h2>My Achievements</h2>
+        <p>Throughout my career, I have achieved several milestones that reflect my dedication and expertise in the IT
+          field:</p>
+        <ul>
+          <li><strong>ITIL Foundation Certified</strong>: Demonstrates my understanding of IT service management best
+            practices.</li>
+          <li><strong>Cloud and Systems Administrator Diploma</strong>: Equipped me with skills to manage cloud
+            infrastructures and systems.</li>
+          <li><strong>CCIE Routing &amp; Switching (Written)</strong>: Validates my advanced knowledge of networking
+            technologies.</li>
+          <li><strong>CompTIA Server+ Certified</strong>: Highlights my proficiency in server hardware and software
+            technologies.</li>
+        </ul>
+        <p>These certifications and achievements have enabled me to deliver high-quality IT solutions and lead
+          successful
+          projects.</p>
+
+        <h2>Testimonials</h2>
+        <p>Here’s what some of my colleagues and clients have said about working with me:</p>
+        <blockquote>
+          <p>"Mujeebur is an exceptional IT professional who consistently delivers results. His technical expertise
+            and
+            problem-solving skills are unmatched." - John Doe, Senior Manager at ABC Tech Solutions</p>
+        </blockquote>
+        <blockquote>
+          <p>"Working with Mujeebur was a pleasure. He is highly knowledgeable and always willing to go the extra mile
+            to
+            ensure success." - Jane Smith, Project Lead at NetPlus IT Consulting</p>
+        </blockquote>
+        <blockquote>
+          <p>"Mujeebur's ability to manage complex IT systems and mentor team members is truly remarkable. He is a
+            valuable
+            asset to any organization." - Alex Johnson, IT Director at First Financial</p>
+        </blockquote>
+
+        <h2>Fun Facts About Me</h2>
+        <p>Beyond my professional life, here are some fun facts about me:</p>
+        <ul>
+          <li>I enjoy exploring new technologies and experimenting with innovative tools in my free time.</li>
+          <li>I have traveled to over 10 countries, and each trip has taught me something new about different cultures
+            and
+            perspectives.</li>
+          <li>I love cooking and often try out new recipes with my family during weekends.</li>
+          <li>I am a big fan of science fiction books and movies, especially those that explore futuristic
+            technologies.
+          </li>
+        </ul>
+        <p>These aspects of my life keep me inspired and motivated to continue growing both personally and
+          professionally.
+        </p>
+
+        <footer>
+          <p>&copy; 2025 Mujeebur Rahman. All rights reserved.</p>
+        </footer>
       </div>
     </div>
+  </div>
+</body>
 
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
 </html>
